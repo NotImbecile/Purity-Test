@@ -91,13 +91,7 @@ let writeQuestions = ["Held hands romantically?",
  "Had sexual intercourse with five or more partners?",
  "Been photographed or filmed during sexual intercourse by yourself or others?",
  "Had period sex?",
- "Had anal sex?",
- "Had a pregnancy scare?",
- "Impregnated someone or been impregnated?",
- "Paid or been paid for a sexual act?",
- "Committed an act of voyeurism?",
- "Committed an act of incest?",
- "Engaged in bestiality?",];
+ "Had anal sex?"];
 
 let questions = [];
 
