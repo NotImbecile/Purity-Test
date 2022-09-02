@@ -1,3 +1,5 @@
+let writeQuestions = ["Question One", "Question Two"];
+
 let questions = [];
 
 document.body.style.backgroundImage = "url('cats.png')";
@@ -15,18 +17,25 @@ let score = document.getElementById('score');
 
 results.style.display = 'none';
 
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < writeQuestions.length; i++) {
+  console.log("ran")
+  questions.push(new Question(writeQuestions[i]));
+}
+
+/*
+for (let i = 0; i < 100; i++) {
   questions.push(new Question((i + 1) + " Question?"));
 }
+*/
 
 for (let i = 0; i < questions.length; i++) {
   temp = document.createElement("input");
   tempLabel = document.createElement("label");
   br = document.createElement("br");
-  tempLabel.style.fontSize = '2.5vw';
-  temp.style.marginLeft = '2vw';
-  temp.style.width = "3vh";
-  temp.style.height = "3vh";
+  tempLabel.style.fontSize = '2.15vh';
+  temp.style.marginLeft = '3vw';
+  temp.style.width = "2.15vh";
+  temp.style.height = "2.15vh";
   temp.id = i;
   temp.type = 'checkbox';
   tempLabel.innerHTML = " " + questions[i].question;
