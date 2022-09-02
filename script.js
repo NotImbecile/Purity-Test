@@ -97,11 +97,11 @@ let writeQuestions = ["Held hands romantically?",
  "Paid or been paid for a sexual act?",
  "Committed an act of voyeurism?",
  "Committed an act of incest?",
- "Engaged in bestiality?",];
+ "Engaged in bestiality?",];;
 
 let questions = [];
 
-document.body.style.backgroundImage = "url('cats.jpg')";
+document.body.style.backgroundImage = "url('cats.png')";
 //document.body.style.backgroundRepeat = "round";
 //document.body.style.backgroundSize = "cover"
 ;
@@ -135,6 +135,7 @@ for (let i = 0; i < questions.length; i++) {
   temp.style.marginLeft = '3vw';
   temp.style.width = "2.15vh";
   temp.style.height = "2.15vh";
+  temp.style.transform = "translateY(.4vh)";
   temp.id = i;
   temp.type = 'checkbox';
   tempLabel.innerHTML = " " + questions[i].question;
