@@ -83,21 +83,17 @@ let writeQuestions = ["Held hands romantically?",
  "Had sexual intercourse with a partner with a 3 or more year age difference?",
  "Had sexual intercourse with a virgin?",
  "Had sexual intercourse without a condom?",
- "Had a STI test due to reasonable suspicion?",
- "Had a STI?",
  "Had a threesome?",
  "Attended an orgy?",
  "Had two or more distinct acts of sexual intercourse with two or more people within 24 hours?",
  "Had sexual intercourse with five or more partners?",
- "Been photographed or filmed during sexual intercourse by yourself or others?",
+ "Been photographed or filmed during sexual intercourse?",
  "Had period sex?",
  "Had anal sex?",
  "Had a pregnancy scare?",
  "Impregnated someone or been impregnated?",
  "Paid or been paid for a sexual act?",
- "Committed an act of voyeurism?",
- "Committed an act of incest?",
- "Engaged in bestiality?",];;
+ "Committed an act of voyeurism?"];;
 
 let questions = [];
 
