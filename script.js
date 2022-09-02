@@ -83,17 +83,21 @@ let writeQuestions = ["Held hands romantically?",
  "Had sexual intercourse with a partner with a 3 or more year age difference?",
  "Had sexual intercourse with a virgin?",
  "Had sexual intercourse without a condom?",
+ "Had a STI test due to reasonable suspicion?",
+ "Had a STI?",
  "Had a threesome?",
  "Attended an orgy?",
  "Had two or more distinct acts of sexual intercourse with two or more people within 24 hours?",
  "Had sexual intercourse with five or more partners?",
- "Been photographed or filmed during sexual intercourse?",
+ "Been photographed or filmed during sexual intercourse by yourself or others?",
  "Had period sex?",
  "Had anal sex?",
  "Had a pregnancy scare?",
  "Impregnated someone or been impregnated?",
  "Paid or been paid for a sexual act?",
- "Committed an act of voyeurism?"];;
+ "Committed an act of voyeurism?",
+ "Committed an act of incest?",
+ "Engaged in bestiality?",];
 
 let questions = [];
 
@@ -109,6 +113,7 @@ let questionsDiv = document.getElementById('questionsDiv');
 let buttonsDiv = document.getElementById('buttonsDiv');
 let results = document.getElementById('results');
 let score = document.getElementById('score');
+let page = document.getElementById('page');
 
 results.style.display = 'none';
 
@@ -135,9 +140,12 @@ for (let i = 0; i < questions.length; i++) {
   temp.id = i;
   temp.type = 'checkbox';
   tempLabel.innerHTML = " " + questions[i].question;
-  questionsDiv.appendChild(temp);
-  questionsDiv.appendChild(tempLabel);
-  questionsDiv.appendChild(br);
+  page.appendChild(temp);
+  page.appendChild(tempLabel);
+  page.appendChild(br);
+  //document.html.appendChild(temp);
+  //document.html.appendChild(tempLabel);
+  //document.html.appendChild(br);
 }
 
 function clear2() {
@@ -156,7 +164,7 @@ function submit() {
     }
   }
   console.log((Math.round(finalScore * 100)) + "%");
-  questionsDiv.style.display = 'none';
+  page.style.display = 'none';
   buttonsDiv.style.display = 'none';
   score.innerHTML = (finalScore*100);
   results.style.display = 'block';
