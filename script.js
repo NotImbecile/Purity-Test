@@ -2,7 +2,7 @@ let writeQuestions = ["Question One", "Question Two"];
 
 let questions = [];
 
-document.body.style.backgroundImage = "url('cats.png')";
+document.body.style.backgroundImage = "url('cats.jpg')";
 //document.body.style.backgroundRepeat = "round";
 //document.body.style.backgroundSize = "cover"
 ;
