@@ -136,9 +136,11 @@ for (let i = 0; i < questions.length; i++) {
   num.style.fontSize = '2.5vh';
   tempLabel.style.fontSize = '2.3vh';
   temp.style.marginLeft = '3vw';
+  tempLabel.style.marginLeft = '3vw';
   temp.style.width = "2.15vh";
   temp.style.height = "2.15vh";
-  temp.style.transform = "translateY(.3vh)";
+  temp.style.transform = "translateY(.3vh) translateX(2vw)";
+  
   num.style.transform = "translateY(-2.8vh) translateX(.8vw)";
   temp.id = i;
   temp.type = 'checkbox';
