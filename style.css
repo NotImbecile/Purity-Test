@@ -4,8 +4,8 @@ html, body {
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0vh;
+  padding: 5vh;
 }
 
 #page {
