@@ -129,20 +129,25 @@ for (let i = 0; i < 100; i++) {
 */
 
 for (let i = 0; i < questions.length; i++) {
+  num = document.createElement("h1");
   temp = document.createElement("input");
   tempLabel = document.createElement("label");
   br = document.createElement("br");
+  num.style.fontSize = '2.5vh';
   tempLabel.style.fontSize = '2.3vh';
   temp.style.marginLeft = '3vw';
   temp.style.width = "2.15vh";
   temp.style.height = "2.15vh";
   temp.style.transform = "translateY(.3vh)";
+  num.style.transform = "translateY(-2.8vh) translateX(.8vw)";
   temp.id = i;
   temp.type = 'checkbox';
   tempLabel.innerHTML = " " + questions[i].question;
+  num.innerHTML = i+1;
   page.appendChild(temp);
   page.appendChild(tempLabel);
   page.appendChild(br);
+  page.appendChild(num);
   //document.html.appendChild(temp);
   //document.html.appendChild(tempLabel);
   //document.html.appendChild(br);
@@ -166,6 +171,7 @@ function submit() {
   console.log((Math.round(finalScore * 100)) + "%");
   page.style.display = 'none';
   buttonsDiv.style.display = 'none';
-  score.innerHTML = (finalScore*100);
+  finalScore = Math.round(finalScore*100);
+  score.innerHTML = (finalScore);
   results.style.display = 'block';
 }
