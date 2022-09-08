@@ -143,7 +143,7 @@ for (let i = 0; i < questions.length; i++) {
   temp.id = i;
   temp.type = 'checkbox';
   tempLabel.innerHTML = " " + questions[i].question;
-  num.innerHTML = i+1;
+  num.innerHTML = i+1+'.';
   page.appendChild(temp);
   page.appendChild(tempLabel);
   page.appendChild(br);
