@@ -134,6 +134,7 @@ for (let i = 0; i < questions.length; i++) {
   tempLabel = document.createElement("label");
   br = document.createElement("br");
   num.style.fontSize = '2.5vh';
+  num.style.width = '0';
   tempLabel.style.fontSize = '2.3vh';
   temp.style.marginLeft = '3vw';
   tempLabel.style.marginLeft = '3vw';
