@@ -1,1 +1,1 @@
-[quiz](purityquiz.com)
+(purityquiz.com)
